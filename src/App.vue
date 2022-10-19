@@ -4,10 +4,18 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
-
+<script>
+import init from "./components/FundamentalLoader";
+export default {
+  name: "App",
+  mounted() {
+    init();
+  },
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
